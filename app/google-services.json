@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "279926835733",
+    "project_id": "gongteacher-8ca37",
+    "storage_bucket": "gongteacher-8ca37.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:279926835733:android:f8d3e18bd1915ef7219c1c",
+        "android_client_info": {
+          "package_name": "com.study.gongteacher"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "279926835733-quhvia8343nj323t74nvnusmc6h4db1u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYuNGzKPZXIm0oqE53we4Olo_dMcQnWME"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "279926835733-quhvia8343nj323t74nvnusmc6h4db1u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

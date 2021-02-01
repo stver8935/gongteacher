@@ -1,0 +1,71 @@
+<resources>
+    <string name="app_name">GongTeacher</string>
+    <string name="server_base_url">13.125.130.142</string>
+
+<!--    <string name="google_app_id">1:279926835733:android:f8d3e18bd1915ef7219c1c7</string>-->
+    
+    <string name="facebook_app_id">701869550701806</string>
+    <string name="fb_login_protocol_scheme">fb701869550701806</string>
+
+    <string name="kakao_app_key">60e655d847db0d06103883d1758725d7</string>
+
+    <string name="naver_client_id">xauqkzZYeOeZKqN94UlU</string>
+    <string name="naver_secret">wlYZN37EFQ</string>
+    <string name="naver_client_name">com.study.gongteacher</string>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <string name="signup_ok">회원가입이 완료 되었습니다.</string>
+    <string name="signup_fail">회원가입이 실패 하셨습니다. 잠시후 다시 시도해 주세요.</string>
+
+
+    <string name="pwd_please_insert">비밀번호를 입력해 주세요.</string>
+    <string name="pwd_can_use">사용 할 수 있는 비밀번호 입니다.</string>
+    <string name="pwd_can_not_use">사용할 수 없는 비밀번호 입니다.</string>
+
+    <string name="pwd_miss_match">비밀번호가 일치 하지 않습니다.</string>
+    <string name="pwd_match">비밀번호가 일치 합니다.</string>
+
+    <string name="id_please_insert">아이디를 입력해 주세요</string>
+    <string name="id_can_use">사용 가능한 아이디 입니다.</string>
+    <string name="id_can_not_use">사용할 수 없는 아이디 입니다.</string>
+
+    <string name="id_duplicate_check">아이디 중복 확인을 눌러주세요.</string>
+    <string name="id_duplicate_can_not_use">중복된 아이디 입니다.</string>
+
+
+    <string name="nick_name_please_insert">닉네임을 입력해 주세요.</string>
+    <string name="nick_name_can_not_use">사용할 수 없는 닉네임 입니다.</string>
+    <string name="nick_name_can_use">사용할 수 있는 닉네임 입니다.</string>
+
+    <string name="email_please_insert">이메일을 입력해 주세요.</string>
+    <string name="email_can_use">올바른 이메일 형식 입니다.</string>
+    <string name="email_can_not_use">올바르지 않은 이메일 형식 입니다.</string>
+
+
+
+    <!--확인 요청 텍스트-->
+    <string name="id_check">아이디를 확인해 주세요</string>
+    <string name="pwd_check">비밀번호를 확인해 주세요</string>
+    <string name="confirm_pwd_check">비밀번호 확인을 확인해 주세요</string>
+    <string name="nick_name_check">닉네임을 확인해 주세요</string>
+    <string name="email_check">이메일을 확인해 주세요</string>
+    <string name="auth_code_check">인증 코드를 확인해 주세요</string>
+
+
+
+
+    <!--에러 구문 -->
+    <string name="database_error">데이터베이스 에러 잠시후 다시 시도해 주세요</string>
+    <string name="server_error">서버 오류 잠시후 다시 시도해 주세요</string>
+    <string name="unkown_error">알수없는 오류 문의 주시길 바랍니다.</string>
+
+</resources>

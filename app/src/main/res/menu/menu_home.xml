@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/menu_home"
+        android:title="홈"
+        android:enabled="true"
+        android:icon="@drawable/icon_home"
+        />
+    <item android:id="@+id/menu_study"
+        android:title="스터디"
+        android:icon="@drawable/icon_study2"
+        />
+
+    <item
+        android:id="@+id/menu_chat"
+        android:title="채팅"
+        android:icon="@drawable/icon_chat"
+        />
+
+    <item
+        android:id="@+id/menu_myprofile"
+        android:title="내 정보"
+        android:enabled="true"
+        android:icon="@drawable/image_profile_man"
+        >
+    </item>
+
+</menu>

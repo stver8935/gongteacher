@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+
+
+
+    <!--    앱 컨셉 색상-->
+    <!--    <color name="colorConcept">#4B89DC</color> -->
+    <!--    <color name="colorConcept">#9B99DC</color>-->
+    <!--    <color name="colorConcept">#77009900</color>-->
+    <color name="colorConcept">#415482</color>
+
+    <color name="colorBlack">#000000</color>
+    <color name="colorGray">#808080</color>
+    <color name="colorCloudyGray">#E2E2E2</color>
+    <color name="colorRed">#ff0000</color>
+    <color name="colorBlue">#000099</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorTransparent">#00ff0000</color>
+
+</resources>

@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/chat_room_head"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/colorConcept"
+        >
+        <ImageView
+            android:id="@+id/chat_room_back"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/image_arrow_back"
+            android:tint="@color/colorWhite"
+            android:padding="10dp"
+            android:layout_weight="3.5"
+            />
+        
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/chat_room_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/style_round_corner"
+            app:queryHint="채팅 내용을 검색해 주세요"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            />
+
+        <ImageView
+            android:id="@+id/chat_room_menu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/image_menu"
+            android:layout_weight="3.5"
+            android:padding="10dp"
+            />
+
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toBottomOf="@+id/chat_room_head"
+        android:layout_marginTop="@android:dimen/notification_large_icon_height"
+        android:layout_marginBottom="@android:dimen/notification_large_icon_height"
+        />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/chat_room_send_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/style_corner_line"
+        android:backgroundTint="@color/colorGray"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        >
+
+        <LinearLayout
+            android:id="@+id/chat_room_send_layout_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            >
+
+
+            <ImageView
+                android:id="@+id/chat_room_add"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:padding="10dp"
+                android:src="@drawable/icon_add"
+                android:tint="@color/colorConcept"
+                />
+            <EditText
+                android:id="@+id/chat_room_content"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="메시지를 입력해 주세요"
+                android:padding="10dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/style_round_corner_line"
+                android:backgroundTint="@color/colorConcept"
+                />
+
+            <ImageView
+                android:id="@+id/chat_room_send"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:gravity="center"
+                android:src="@drawable/icon_send"
+                android:padding="10dp"
+                android:tint="@color/colorCloudyGray"
+                android:backgroundTint="@color/colorConcept"
+                />
+        </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/chat_room_send_menu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintTop_toBottomOf="@id/chat_room_send_layout_main"
+                android:visibility="gone"
+                />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/chat_drawer"
+        android:layout_width="250dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@drawable/style_round_corner_line"
+        android:backgroundTint="@color/colorConcept"
+        android:paddingTop="3dp"
+        android:paddingLeft="3dp"
+        android:paddingBottom="3dp"
+        >
+        <LinearLayout
+            android:id="@+id/chat_drawer_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/style_round_corner"
+            android:padding="10dp"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:id="@+id/chat_drawer_head"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toTopOf="parent"
+                >
+                <TextView
+                    android:id="@+id/chat_drawer_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="Android 스터디 채팅방"
+                    android:layout_weight="1"
+                    />
+
+                <ImageView
+                    android:id="@+id/chat_drawer_favorite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_heart"
+                    android:layout_weight="3"
+                    />
+            </LinearLayout>
+
+
+            <View
+                android:id="@+id/chat_drawer_head_line"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorConcept"
+                android:layout_marginTop="5dp"
+                />
+
+            <LinearLayout
+                android:id="@+id/chat_drawer_contents_layouts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/icon_speaker"
+                    android:background="@drawable/style_corner_line"
+                    android:text="공지"
+                    android:gravity="center_horizontal"
+                    />
+
+
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="@android:dimen/app_icon_size"
+                    android:background="@color/colorConcept"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/icon_appointmnet_calendar"
+                    android:background="@drawable/style_corner_line"
+                    android:text="약속 일정"
+                    android:gravity="center_horizontal"
+                    />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="@android:dimen/app_icon_size"
+                    android:background="@color/colorConcept"
+                    />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/icon_person_add"
+                    android:background="@drawable/style_corner_line"
+                    android:text="초대"
+                    android:gravity="center_horizontal"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorConcept"
+                />
+
+            <LinearLayout
+                android:id="@+id/chat_img_history_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="공유된 사진"
+                    android:layout_marginBottom="10dp"
+                    />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/chat_img_history_recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/chat_user_list_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="채팅방 참여자"
+                    android:layout_marginBottom="10dp"
+                    />
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/chat_user_list_recyclerivew"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorConcept"
+                android:layout_marginBottom="10dp"
+                />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/chat_drawer_bottom_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <ImageView
+                    android:id="@+id/chat_exit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_exit"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+
+                <ImageView
+                    android:id="@+id/chat_setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_setting"
+                    android:layout_gravity="right"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </LinearLayout>
+
+
+
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/colorConcept"
+    >
+
+    <View
+        style="@style/Splash"
+        android:layout_weight="0.60"
+        />
+    <TextView
+        android:id="@+id/tv_splash_title"
+        style="@style/Splash"
+        android:text="Gong\nTeacher"
+        android:textColor="@color/colorWhite"
+        android:textSize="50sp"
+        android:gravity="center"
+        />
+    <ImageView
+        android:id="@+id/iv_splash_icon"
+        android:src="@drawable/icon_study2"
+        style="@style/Splash"
+        android:paddingBottom="50dp"
+        android:tint="@color/colorWhite"
+        />
+
+    <LinearLayout
+        style="@style/Splash"
+        android:gravity="center"
+        >
+        <TextView
+            android:id="@+id/tv_splash_loading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="업데이트 정보를 확인중 입니다."
+            android:gravity="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            />
+        <ProgressBar
+            android:id="@+id/pb_splash_loading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:outlineSpotShadowColor="@color/colorBlack"
+            />
+
+    </LinearLayout>
+</LinearLayout>

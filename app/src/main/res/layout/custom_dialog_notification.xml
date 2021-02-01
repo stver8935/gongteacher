@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@android:color/transparent"
+
+    >
+    <TextView
+        android:id="@+id/tv_dialog_confirmation_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorConcept"
+        android:textColor="@color/colorWhite"
+        android:text="로그인 중 입니다."
+        android:gravity="center"
+        />
+    <TextView
+        android:id="@+id/tv_dialog_confirmation_message"
+        android:layout_width="match_parent"
+        android:layout_height="@android:dimen/notification_large_icon_height"
+        android:text="하시겠습니까?"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        />
+    <Button
+        android:id="@+id/btn_dialog_confirmation_check"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="확인"
+        />
+
+
+</LinearLayout>
