@@ -12,8 +12,13 @@ public class AccountAuthRequest {
     @SerializedName("auth_code")
     private String authCode;
 
-    public AccountAuthRequest(String email, String authCode) {
+    @Expose
+    @SerializedName("auth_code_key")
+    private int authCodeKey;
+
+    public AccountAuthRequest(String email,int authCodeKey, String authCode) {
         this.email = email;
+        this.authCodeKey = authCodeKey;
         this.authCode = authCode;
     }
 }

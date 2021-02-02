@@ -15,40 +15,42 @@
 
     
     
-    
-    
-    
-    
-    
-    
-    
-    
+    <!--회원 가입 관련-->
     <string name="signup_ok">회원가입이 완료 되었습니다.</string>
     <string name="signup_fail">회원가입이 실패 하셨습니다. 잠시후 다시 시도해 주세요.</string>
 
+    <!--계정 관련-->
+    <string name="account_auth_fail">인증되지 않은 계정 입니다.</string>
 
-    <string name="pwd_please_insert">비밀번호를 입력해 주세요.</string>
-    <string name="pwd_can_use">사용 할 수 있는 비밀번호 입니다.</string>
-    <string name="pwd_can_not_use">사용할 수 없는 비밀번호 입니다.</string>
+
+
+    <!--비밀번호 관련-->
+    <string name="pwd_insert">비밀번호를 입력해 주세요.</string>
+    <string name="pwd_use">사용 할 수 있는 비밀번호 입니다.</string>
+    <string name="pwd_not_use">사용할 수 없는 비밀번호 입니다.</string>
 
     <string name="pwd_miss_match">비밀번호가 일치 하지 않습니다.</string>
     <string name="pwd_match">비밀번호가 일치 합니다.</string>
 
-    <string name="id_please_insert">아이디를 입력해 주세요</string>
-    <string name="id_can_use">사용 가능한 아이디 입니다.</string>
-    <string name="id_can_not_use">사용할 수 없는 아이디 입니다.</string>
+
+    <!--아이디 관련-->
+    <string name="id_insert">아이디를 입력해 주세요</string>
+    <string name="id_use">사용 가능한 아이디 입니다.</string>
+    <string name="id_not_use">사용할 수 없는 아이디 입니다.</string>
 
     <string name="id_duplicate_check">아이디 중복 확인을 눌러주세요.</string>
-    <string name="id_duplicate_can_not_use">중복된 아이디 입니다.</string>
+    <string name="id_duplicate_not_use">중복된 아이디 입니다.</string>
+
+    <!--닉네임 관련-->
+    <string name="nick_name_insert">닉네임을 입력해 주세요.</string>
+    <string name="nick_name_not_use">사용할 수 없는 닉네임 입니다.</string>
+    <string name="nick_name_use">사용할 수 있는 닉네임 입니다.</string>
 
 
-    <string name="nick_name_please_insert">닉네임을 입력해 주세요.</string>
-    <string name="nick_name_can_not_use">사용할 수 없는 닉네임 입니다.</string>
-    <string name="nick_name_can_use">사용할 수 있는 닉네임 입니다.</string>
-
-    <string name="email_please_insert">이메일을 입력해 주세요.</string>
-    <string name="email_can_use">올바른 이메일 형식 입니다.</string>
-    <string name="email_can_not_use">올바르지 않은 이메일 형식 입니다.</string>
+    <!--이메일 관련-->
+    <string name="email_insert">이메일을 입력해 주세요.</string>
+    <string name="email_use">올바른 이메일 형식 입니다.</string>
+    <string name="email_not_use">올바르지 않은 이메일 형식 입니다.</string>
 
 
 
@@ -61,11 +63,37 @@
     <string name="auth_code_check">인증 코드를 확인해 주세요</string>
 
 
+    <!--인증 관련 -->
+    <string name="auth_time_finish">인증 시간이 만료 되었습니다.</string>
+    <string name="auth_code_finish">만료된 인증 코드 입니다.</string>
+    <string name="auth_miss_match">인증 정보가 일치 하지 않습니다.</string>
+    <string name="auth_ok">인증에 성공 하셨습니다.</string>
+
+    <string name="send_auth_code_ok">인증 코드가 발송 되었습니다.</string>
+    <string name="send_auth_code_fail">인증 코드 발송에 실패 하셨습니다.</string>
+
+    <!--데이터 관련-->
+    <string name="db_connection_fail">데이터베이스 연결에 실패 하셨습니다.</string>
+    <string name="db_connection_ok">데이터베이스 연결에 성공 하셨습니다.</string>
+    <string name="db_error">데이터베이스 에러 잠시후 다시 시도해 주세요</string>
+
+    <string name="db_read_ok">데이터를 읽어 오는데 성공 하셨습니다.</string>
+    <string name="db_delete_ok">데이터 삭제에 성공 하셨습니다.</string>
+    <string name="db_update_ok">데이터 갱신에 성공 하셨습니다.</string>
+    <string name="db_upload_ok">데이터 업로드에 성공 하셨습니다.</string>
 
 
-    <!--에러 구문 -->
-    <string name="database_error">데이터베이스 에러 잠시후 다시 시도해 주세요</string>
-    <string name="server_error">서버 오류 잠시후 다시 시도해 주세요</string>
+    <string name="db_read_fail">데이터를 읽어 오는데 실패 하셨습니다.</string>
+    <string name="db_delete_fail">데이터 삭제에 실패 하셨습니다.</string>
+    <string name="db_update_fail">데이터 갱신에 실패 하셨습니다.</string>
+    <string name="db_upload_fail">데이터 업로드에 실패 하셨습니다.</string>
+
+    <!--알수 없는 에러-->
     <string name="unkown_error">알수없는 오류 문의 주시길 바랍니다.</string>
+
+
+
+    <string name="loading">로딩 중 입니다.</string>
+    <string name="login">로그인 중 입니다.</string>
 
 </resources>
